@@ -1,143 +1,55 @@
-AI-Powered Movie Recommendation System
+🎬 AI-Powered Movie Recommendation System
 
-A smart, interactive web application that recommends movies based on user preferences using TMDB API + Machine Learning.
+A simple movie discovery web app that recommends movies based on user interests. It uses the TMDB API for real-time movie data and a content-based filtering system to suggest similar movies.
 
-🚀 Overview
+⭐ Features
 
-This project is an AI-powered movie recommendation web app built using:
+Search movies
 
-React + Vite (Frontend)
+Get similar movie recommendations
 
-TMDB API for real-time movie data
+View trending & popular titles
 
-JavaScript Recommendation Logic (Content-based filtering)
+Detailed movie pages (overview, rating, cast)
 
-Responsive UI for clean user experience
+Lightweight, fast UI (built with Vite + React)
 
-Users can discover trending movies, search titles, get similar movie recommendations, and explore detailed movie pages.
+🛠 Tech Stack
 
-✨ Features
+React + Vite
 
-🔍 Search Movies using TMDB API
+JavaScript
 
-🎯 AI-driven Recommendation System (similar movies, genres, keywords)
+TMDB API
 
-📈 Trending & Popular Movies
+HTML, CSS
 
-🎞️ Movie Details Page (poster, cast, crew, rating, overview)
+🔧 Setup
+1. Install & Run
+npm install
+npm run dev
 
-⭐ Watchlist / Favorites
+2. Add TMDB API Key
 
-📱 Fully Responsive UI
+Create .env in project root:
 
-⚡ Fast performance using Vite
-
-🛠️ Tech Stack
-Frontend
-
-React.js
-
-Vite
-
-JavaScript (ES6+)
-
-HTML5, CSS3
-
-APIs & Tools
-
-TMDB API (The Movie Database)
-
-Axios / Fetch
-
-🔑 TMDB API Setup
-
-Visit: https://www.themoviedb.org
-
-Create a free account
-
-Go to:
-Profile → Settings → API → Request API Key
-
-Copy your TMDB API Key (v3)
-
-Create .env file in project root
 VITE_TMDB_KEY=your_api_key_here
 
-Restart the dev server
-npm run dev
 
-📦 Installation & Setup
-Clone the Repository
-git clone https://github.com/your-username/movie-recommendation-system.git
-cd movie-recommendation-system
+Restart dev server after saving.
 
-Install Dependencies
-npm install
+🤖 How It Works
 
-Start Development Server
-npm run dev
+The recommendation system uses content-based filtering by comparing movie genres, keywords, and descriptions to suggest movies similar to the one selected.
 
-📁 Project Structure
-movie-recommendation-system/
-│── src/
-│   ├── components/
-│   ├── pages/
-│   ├── hooks/
-│   ├── utils/
-│   ├── App.jsx
-│   ├── main.jsx
-│── public/
-│── .env
-│── package.json
-│── README.md
+🚀 Future Improvements
 
-🤖 How the Recommendation System Works
+User login + personalized recommendations
 
-The AI recommendation engine uses:
+Dark mode
 
-✅ Content-Based Filtering
-
-Movie genres
-
-Keywords
-
-Cast
-
-Overview description
-
-User search/past selections
-
-How it works:
-
-Fetch movie metadata from TMDB
-
-Compute similarity score using cosine similarity or keyword matches
-
-Show most similar movies to the selected title
-
-📷 Screenshots
-
-(Add your app screenshots here)
-
-![Home Page](./screenshots/home.png)
-![Movie Details](./screenshots/details.png)
-
-🔮 Future Improvements
-
-User login system
-
-AI model using embeddings (BERT/TensorFlow)
-
-Collaborative filtering for personalized recos
-
-Dark mode UI
-
-Trending shows section
-
-🤝 Contributing
-
-Pull requests are welcome. Feel free to open issues for suggestions or bugs.
+Better AI/ML-based recommendation model
 
 📄 License
 
-This project is licensed under the MIT License.
+MIT License.
